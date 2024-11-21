@@ -1,0 +1,47 @@
+@mixin headline-1 {
+    font-weight: 600;
+    font-size: 4em;
+    line-height: 1.1875;
+}
+
+@mixin headline-2 {
+    font-weight: 600;
+    font-size: 2.25em;
+    line-height: 1.22;
+}
+
+@mixin headline-3 {
+    font-weight: 600;
+    font-size: 1.75em;
+    line-height: 1.28;
+}
+
+@mixin headline-4 {
+    font-weight: 600;
+    font-size: 1.25em;
+    line-height: 1.4;
+}
+
+@mixin body-1 {
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 1.55;
+}
+
+@mixin body-2 {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+@mixin body-3 {
+    font-weight: 400;
+    font-size: .875em;
+    line-height: 1.42;
+}
+
+@mixin body-4 {
+    font-weight: 400;
+    font-size: .75em;
+    line-height: 1.33;
+}
