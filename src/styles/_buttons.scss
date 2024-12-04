@@ -1,0 +1,132 @@
+@use "colors" as *;
+@use "typography" as *;
+
+%btn-base {
+  font-size: 1em;
+  border-radius: 4px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+%btn-primary {
+  @extend %btn-base;
+  border: none;
+  color: white;
+  background-color: $clr-primary;
+
+  &:focus {
+    border: 2px solid $D_grey;
+  }
+  &:active {
+    background-color: $clr-shade-2;
+  }
+  &:disabled {
+    background-color: $grey-blue;
+  }
+}
+
+%btn-secondary {
+  @extend %btn-base;
+  border: 1px solid $clr-primary;
+  background-color: white;
+  color: $clr-primary;
+
+  &:hover {
+    background-color: $silver;
+  }
+  &:focus {
+    border: 2px solid $L_grey;
+  }
+  &:active {
+    border: none;
+  }
+  &:disabled {
+    background-color: $silver;
+    color: $grey-blue;
+    border: none;
+  }
+}
+
+%btn-tertiary {
+  @extend %btn-base;
+  border: none;
+  background: transparent;
+  color: $clr-primary;
+
+  &:hover {
+    background: $silver;
+  }
+  &:focus {
+    border: 2px solid $D_grey;
+  }
+  &:active {
+    background-color: $clr-tint-5;
+  }
+  &:disabled {
+    background-color: $silver;
+    color: $grey-blue;
+  }
+}
+
+%btn-normal {
+  padding: 1em 2em;
+  font-size: 1.5em;
+  line-height: 1.3;
+}
+
+%btn-medium {
+  padding: 0.875em 2em;
+  font-size: 1em;
+  line-height: 1.25;
+}
+
+%btn-small {
+  padding: 8px 1.5em;
+  font-size: 0.875em;
+  line-height: 1.14;
+}
+
+@mixin btn-primary-normal {
+  @extend %btn-primary;
+  @extend %btn-normal;
+}
+
+@mixin btn-primary-medium {
+  @extend %btn-primary;
+  @extend %btn-medium;
+}
+
+@mixin btn-primary-small {
+  @extend %btn-primary;
+  @extend %btn-small;
+}
+
+@mixin btn-secondary-normal {
+  @extend %btn-secondary;
+  @extend %btn-normal;
+}
+
+@mixin btn-secondary-medium {
+  @extend %btn-secondary;
+  @extend %btn-medium;
+}
+
+@mixin btn-secondary-small {
+  @extend %btn-secondary;
+  @extend %btn-small;
+}
+
+@mixin btn-tertiary-normal {
+  @extend %btn-tertiary;
+  @extend %btn-normal;
+}
+
+@mixin btn-tertiary-medium {
+  @extend %btn-tertiary;
+  @extend %btn-medium;
+}
+
+@mixin btn-tertiary-small {
+  @extend %btn-tertiary;
+  @extend %btn-small;
+}
